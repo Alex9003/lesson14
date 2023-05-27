@@ -1,0 +1,37 @@
+*{
+	margin:0px;
+	padding:opx;
+}
+body{
+	background-color:red;
+}
+header{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	padding-top:150px;
+}
+#mario_animation{
+	background-image:url("images/m.jpg");
+	border-radius:50%;
+	box-shadow:0 0 0 5px #76000d, 0 0 0 10px #ffffff;
+	width:200px;
+	height:200px;
+	transition:background-image 4s,transform 4s 4s, border-radius 2s;
+}
+#mario_animation:hover{
+	background-image:url("images/mario1.jpg");
+	transform:rotate(45deg);
+	border-radius: 0;
+	box-shadow: 0 0 0 5px blue;
+}
+#text_animation{
+	font-family: "Anton";
+	font-size:60px;
+}
+header span{
+	display:inline-block;
+}
+header:hover .sm{
+	transform:rotate(45deg);
+}
